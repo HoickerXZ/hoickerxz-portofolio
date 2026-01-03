@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Curseur image */
+html {
+    cursor: url("images/CURSUUR.png") 16 16, auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+}
+
+
+body::-webkit-scrollbar{
+  display: none; /* Chrome, Edge, Opera */
+}
+
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e0e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 5vh;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+
+/* Bannière */
+.ban {
+    background-color: black;
+    position: relative;   
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.bann {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+/* Titre principal avec animation hover continue */
+.hoick {
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 17vh;
+    z-index: 2;
+    text-align: center;
+    text-shadow: 0px 0px 41px rgba(255,255,255,0.94);
+    transition: all 0.6s ease;
+}
+
+/* Hover pour animation continue */
+.hoick:hover {
+    animation: moveUpDownScaleLoop 1s ease-in-out infinite alternate;
+}
+
+/* Texte secondaire avec hover smooth */
+.tit {
+    position: absolute;
+    top: 540px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 7vh;
+    z-index: 2;
+    text-align: center;
+    text-shadow: 0px 0px 20px rgba(255,255,255,0.94);
+    transition: all 0.6s ease;
+}
+
+.tit:hover {
+    font-size: 8vh;
+    animation: moveUpDown 0.6s ease forwards;
+}
+
+.tit2 {
+    position: absolute;
+    top: 1500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 7vh;
+    z-index: 2;
+    text-align: center;
+    text-shadow: 0px 0px 20px rgba(255,255,255,0.94);
+    transition: all 0.6s ease;
+}
+
+.tit2:hover {
+    font-size: 8vh;
+    animation: moveUpDown 0.6s ease forwards;
+}
+
+.ctc{
+    background: linear-gradient(171deg,rgba(2, 2, 30, 1) 5%, rgba(0, 30, 255, 1) 100%);
+    border-radius: 30px;
+    margin-top: 250px;
+    width: 1200px;
+    margin-left: 9%;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    
+}
+
+
+.prfl{
+    border-radius: 3%;
+    margin-left: 43.2px;
+    box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.hh{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    margin-left: 120px;
+    font-size: 10vh;
+    white-space: nowrap;
+    padding-bottom: 450px;
+    text-shadow: 0px 0px 20px rgba(255,255,255,0.94);
+
+}
+
+.tt{
+    position: absolute;
+    z-index: 2;
+    margin-top: 150px;
+    margin-left: 650px;
+    width: 430px;
+    animation: floatX 1.2s cubic-bezier(.45,.05,.55,.95) infinite;
+
+}
+
+/* Keyframes pour mouvement haut-bas texte secondaire */
+@keyframes moveUpDown {
+    0% { transform: translate(-50%, -60%); }
+    50% { transform: translate(-50%, -40%); }
+    100% { transform: translate(-50%, -50%); }
+}
+
+/* Keyframes pour mouvement haut-bas + agrandissement titre principal en boucle */
+@keyframes moveUpDownScaleLoop {
+    0% { transform: translate(-50%, -55%) scale(1); }
+    50% { transform: translate(-50%, -45%) scale(1.05); }
+    100% { transform: translate(-50%, -55%) scale(1); }
+}
+
+@keyframes floatX {
+    0%   { transform: translateX(0); }
+    40%  { transform: translateX(-20px); }
+    70%  { transform: translateX(8px); }
+    100% { transform: translateX(0); }
+}
+
+/* Profils circulaires */
+.pp {
+    position: absolute;
+    top: 255px;
+    left: 40px;
+    border: 11px solid #131313;
+    border-radius: 50%;
+    height: 220px;
+}
+
+.ppp {
+    position: absolute;
+    top: 268px;
+    left: 53px;
+    border-radius: 50%;
+    height: 220px;
+}
+
+.minia{
+    margin-top: 340px;
+}
+
+.m1{
+    width: 600px;
+    height: 310px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 84px;
+    transition: all 0.3s ease;
+}
+
+.m1:hover{
+    width: 600px;
+    height: 310px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 84px;
+    box-shadow: 0px 0px 121px 8px rgba(255,0,0,0.75);
+    transition: all 0.3s ease;
+}
+
+.m2{
+    width: 600px;
+    height: 310px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+
+.m2:hover{
+    width: 600px;
+    height: 310px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 121px 8px rgba(255,0,0,0.75);
+    transition: all 0.3s ease;
+}
+
+.m3{
+    width: 600px;
+    height: 310px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 84px;
+    margin-top: 50px;
+    transition: all 0.3s ease;
+}
+
+.m3:hover{
+    width: 600px;
+    height: 310px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 84px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 121px 8px rgba(255,0,0,0.75);
+    transition: all 0.3s ease;
+
+}
+
+
+.m4{
+    width: 600px;
+    height: 310px;
+    border-radius: 25px;
+     transition: all 0.3s ease;
+}
+
+
+.m4:hover{
+    width: 600px;
+    height: 310px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 121px 8px rgba(255,0,0,0.75);
+    transition: all 0.3s ease;
+}
+
+.fin{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+p{
+    color: white;
+    font-family: "Inter", sans-serif;
+}

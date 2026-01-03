@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoicker_XZ | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/PP_HACK_PNG-modified.png">
+</head>
+<body>
+    <div id="splash"><h1>Cliquez pour entrer</h1></div>
+    <audio id="so" src="song/DOORS ORIGINAL SOUNDTRACK VOL. 1 - Dawn Of The Doors.mp3" loop></audio>
+    <header>
+        <div class="ban">
+            <img class="bann" src="images/PP_HACK_PNG.png" alt="">
+            <h1 class="hoick">Hoicker_XZ</h1>
+        </div>
+        <img class="pp" src="images/PP_HACK_PNG-modified.png" alt="">
+        <img class="ppp" src="images/PP_HACK_PNG-modified.png" alt="">
+    </header>
+    <main>
+        <h2 class="tit">MES MINIATURES</h2>
+        <div class="minia">
+            <img class="m1" src="images/m1.png" alt="">
+            <img class="m2" src="images/m2.png" alt="">
+            <img class="m3" src="images/m3.png" alt="">
+            <img class="m4" src="images/m4.png" alt="">
+        </div>
+        <h2 class="tit2">ME CONTACTER </h2>
+        <div class="ctc" >
+            <img class="prfl" src="images/Capture d'écran 2026-01-03 163712.png" alt="">
+            <h2 class="hh" >MON PROFIL</h2>
+            <img class="tt" src="images/image.png" alt="">
+        </div><br><br><br><br><br>
+
+        <footer>
+            <div class="fin" >
+                <p>Portfolio rélisé par : Moi-même lol 😂 </p>
+
+            </div>
+        </footer>
+    
+
+    </main>
+<script>
+const splash = document.getElementById("splash");
+const audio = document.getElementById("so"); // ton audio existant
+audio.volume = 0.5;
+
+splash.addEventListener("click", () => {
+    splash.style.display = "none";  // cache l'écran
+    audio.play();                   // lance la musique
+});
+</script>
+
+</body>
+</html>

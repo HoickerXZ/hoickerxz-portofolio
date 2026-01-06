@@ -35,7 +35,7 @@ body::-webkit-scrollbar{
     background-color: black;
     position: relative;   
     width: 100%;
-    height: clamp(260px, 35vh, 370px);
+    height: clamp(294px, 35vh, 370px);
     overflow: hidden;
 }
 
@@ -221,3 +221,4 @@ p{
     color: white;
     font-family: "Inter", sans-serif;
 }
+
